@@ -37,7 +37,8 @@ public class TicCode {
 	public void startGame() {
 		startGUI();
 	}
-
+	
+	//checks if its computers move
 	public Move Computer() {
 		Move move = new Move();
 		Random rand = new Random();
@@ -182,8 +183,6 @@ public class TicCode {
 		return false;
 	}
 
-	// This is the evaluation function as discussed
-	// in the previous article ( http://goo.gl/sJgv68 )
 	public int evaluate(State[][] b) {
 		// Checking for Rows for X or O victory.
 		for (int row = 0; row < 3; row++) {

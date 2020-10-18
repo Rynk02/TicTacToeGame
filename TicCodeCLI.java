@@ -265,8 +265,6 @@ public class TicCodeCLI {
 		return false;
 	}
 
-	//This is the evaluation function as discussed 
-	//in the previous article ( http://goo.gl/sJgv68 ) 
 	public static int evaluate(State[][] b) {
 		// Checking for Rows for X or O victory.
 		for (int row = 0; row < 3; row++) {
@@ -417,7 +415,7 @@ public class TicCodeCLI {
 		}
 		return bestMove;
 	}
-
+	//display the game state
 	public static void displayBoard(State[][] board) {
 		String seperator = "------------";
 		for (int i = 0; i < board.length; i++) {
