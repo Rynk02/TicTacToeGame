@@ -59,7 +59,7 @@ public class TicCode {
 		}
 		// Computer 50% to do a random move or a perfect move
 		if (getGameMode().equals("medium")) {
-			int ranNumber = rand.nextInt(1);
+			int ranNumber = rand.nextInt(2);
 			if (ranNumber == 0) {
 				while (true) {
 					move.row = rand.nextInt(3);
